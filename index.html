@@ -956,12 +956,24 @@ html, body, body *, button, input, select, textarea {
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"TheCorrectTime",
-  "url":"https://thecorrecttime.pages.dev/",
-  "description":"A simple world clock for checking current time and time zones around the world.",
-  "applicationCategory":"UtilitiesApplication",
-  "operatingSystem":"Web"
+  "@graph":[
+    {
+      "@type":"WebApplication",
+      "@id":"https://thecorrecttime.pages.dev/#app",
+      "name":"TheCorrectTime",
+      "url":"https://thecorrecttime.pages.dev/",
+      "description":"A simple world clock for checking current time and time zones around the world.",
+      "applicationCategory":"UtilitiesApplication",
+      "operatingSystem":"Web"
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://thecorrecttime.pages.dev/#website",
+      "name":"TheCorrectTime",
+      "url":"https://thecorrecttime.pages.dev/",
+      "description":"Check the current time around the world with a simple world clock and time zone tools."
+    }
+  ]
 }
 </script>
 </head>
